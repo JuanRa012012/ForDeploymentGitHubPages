@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="less/principal.less">
+  <script type="module" src="ocultar.js"></script>
+  <title>Vite App</title>
+</head>
+
+<body>
+
+  <h1>LIGAS NACIONALES</h1>
+  <div class="acordeon">
+
+    <div class="acordeon-objeto">
+      <button class="acordeon-boton">Liga Nacional Hondureña</button>
+      <div class="acordeon-contenido">
+        {{>tablaContenedor tablasData=honduras}}
+      </div>
+
+    </div>
+    <div class="acordeon-objeto">
+      <button class="acordeon-boton">Liga Nacional Alemana</button>
+      <div class="acordeon-contenido">
+        {{>tablaContenedor tablasData=alemania}}
+      </div>
+
+    </div>
+
+    <div class="acordeon-objeto">
+      <button class="acordeon-boton">Liga Nacional Española</button>
+      <div class="acordeon-contenido">
+        {{>tablaContenedor tablasData=españa}}
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+</body>
+
+</html>
